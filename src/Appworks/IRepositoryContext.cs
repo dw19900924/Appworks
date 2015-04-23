@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Appworks.Repository
+namespace Appworks
 {
     using System.Data;
 
