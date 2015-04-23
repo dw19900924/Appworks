@@ -39,18 +39,17 @@ namespace Appworks
         /// </returns>
         public IRepository<T> CreateRepository<T>() where T : class
         {
-            Type repositoryType = Type.GetType(ProviderSection.Repository);
-            if (repositoryType != null)
+            Type contextType = Type.GetType(ProviderSection.RepositoryContext);
+            if (contextType != null)
             {
-                Type[] args = { typeof(T) };
-                repositoryType = repositoryType.MakeGenericType(args);
-
-                Type contextType = Type.GetType(ProviderSection.RepositoryContext);
-                if (contextType != null)
+                object context = Activator.CreateInstance(contextType);
+                
+                Type repositoryType = Type.GetType(ProviderSection.Repository);
+                if (repositoryType != null)
                 {
-                    object repositoryContext = Activator.CreateInstance(contextType);
+                    repositoryType = repositoryType.MakeGenericType(typeof(T));
 
-                    return (IRepository<T>)Activator.CreateInstance(repositoryType, new[] { repositoryContext });
+                    return (IRepository<T>)Activator.CreateInstance(repositoryType, new[] { context });
                 }
             }
 

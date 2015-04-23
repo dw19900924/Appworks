@@ -11,8 +11,6 @@ namespace Appworks
 {
     using System.Data;
 
-    using Appworks.Repository;
-
     /// <summary>
     /// The UnitOfWork interface.
     /// </summary>
