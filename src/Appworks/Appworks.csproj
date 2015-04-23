@@ -64,6 +64,7 @@
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\IRepositoryContext.cs" />
     <Compile Include="ServiceLocator.cs" />
+    <Compile Include="SortAs.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -39,18 +39,11 @@ namespace Appworks
         public UnitOfWork(IRepositoryContext context)
         {
             this.Context = context;
-
-            this.Committed = true;
         }
 
         #endregion
 
         #region Public Properties
-
-        /// <summary>
-        /// Gets a value indicating whether committed.
-        /// </summary>
-        public bool Committed { get; private set; }
 
         /// <summary>
         /// Gets the context.
@@ -80,13 +73,12 @@ namespace Appworks
         /// </param>
         public void BeginTransaction(IsolationLevel isolationLevel)
         {
-            if (this.Transaction != null && this.Transaction.Connection != null && this.Committed == false)
+            if (this.Transaction != null && this.Transaction.Connection != null)
             {
                 throw new Exception("Not finished previous transaction.");
             }
 
             this.transaction = this.Context.Connection.BeginTransaction(isolationLevel);
-            this.Committed = false;
         }
 
         /// <summary>
@@ -95,7 +87,6 @@ namespace Appworks
         public void Commit()
         {
             this.transaction.Commit();
-            this.Committed = true;
         }
 
         #endregion

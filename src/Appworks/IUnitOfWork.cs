@@ -21,11 +21,6 @@ namespace Appworks
         #region Public Properties
 
         /// <summary>
-        /// Gets a value indicating whether committed.
-        /// </summary>
-        bool Committed { get; }
-
-        /// <summary>
         /// Gets the context.
         /// </summary>
         IRepositoryContext Context { get; }
