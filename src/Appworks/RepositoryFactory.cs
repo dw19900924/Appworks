@@ -43,7 +43,7 @@ namespace Appworks
             if (contextType != null)
             {
                 object context = Activator.CreateInstance(contextType);
-                
+
                 Type repositoryType = Type.GetType(ProviderSection.Repository);
                 if (repositoryType != null)
                 {
