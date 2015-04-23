@@ -83,6 +83,7 @@
     <Compile Include="Specifications\OrSpecification.cs" />
     <Compile Include="Specifications\ParameterRebinder.cs" />
     <Compile Include="Specifications\Specification.cs" />
+    <Compile Include="RepositoryProviderConfigurationSection.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

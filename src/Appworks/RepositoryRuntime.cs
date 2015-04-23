@@ -70,16 +70,13 @@ namespace Appworks
         /// <summary>
         /// The get repository.
         /// </summary>
-        /// <param name="context">
-        /// The context.
-        /// </param>
         /// <typeparam name="T">
         /// The entity type.
         /// </typeparam>
         /// <returns>
         /// The <see cref="IRepository{T}"/>.
         /// </returns>
-        public IRepository<T> GetRepository<T>(IRepositoryContext context) where T : class
+        public IRepository<T> GetRepository<T>() where T : class
         {
             lock (this.lockObj)
             {
@@ -88,7 +85,7 @@ namespace Appworks
                     return this.repositories[typeof(T)] as IRepository<T>;
                 }
 
-                IRepository<T> repository = this.factory.CreateRepository<T>(context);
+                IRepository<T> repository = this.factory.CreateRepository<T>();
                 this.repositories.Add(typeof(T), repository);
                 return repository;
             }

@@ -19,16 +19,13 @@ namespace Appworks
         /// <summary>
         /// The create repository.
         /// </summary>
-        /// <param name="context">
-        /// The context.
-        /// </param>
         /// <typeparam name="T">
         /// The entity type.
         /// </typeparam>
         /// <returns>
         /// The <see cref="IRepository{T}"/>.
         /// </returns>
-        IRepository<T> CreateRepository<T>(IRepositoryContext context) where T : class;
+        IRepository<T> CreateRepository<T>() where T : class;
 
         #endregion
     }
