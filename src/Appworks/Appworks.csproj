@@ -58,12 +58,15 @@
     <Compile Include="Attributes\PrimaryKeyAttribute.cs" />
     <Compile Include="Attributes\TableAttribute.cs" />
     <Compile Include="DisposableObject.cs" />
+    <Compile Include="IRepositoryFactory.cs" />
     <Compile Include="IServiceLocator.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="PagedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IRepositoryContext.cs" />
+    <Compile Include="RepositoryFactory.cs" />
+    <Compile Include="RepositoryRuntime.cs" />
     <Compile Include="ServiceLocator.cs" />
     <Compile Include="SortAs.cs" />
     <Compile Include="Specifications\AndNotSpecification.cs" />
