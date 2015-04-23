@@ -53,6 +53,10 @@
     <Compile Include="Application\AppInitEventArgs.cs" />
     <Compile Include="Application\AppRuntime.cs" />
     <Compile Include="Application\IApp.cs" />
+    <Compile Include="Attributes\NotNullAttribute.cs" />
+    <Compile Include="Attributes\IgnoreAttribute.cs" />
+    <Compile Include="Attributes\PrimaryKeyAttribute.cs" />
+    <Compile Include="Attributes\TableAttribute.cs" />
     <Compile Include="DisposableObject.cs" />
     <Compile Include="IServiceLocator.cs" />
     <Compile Include="IUnitOfWork.cs" />
