@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks", "Appworks\Appworks.csproj", "{7559B6B1-F48F-4569-B167-13516C7E70E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks", "src\Appworks\Appworks.csproj", "{7559B6B1-F48F-4569-B167-13516C7E70E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{774576E8-7C0C-49A3-B60D-49928BF92A57}"
 	ProjectSection(SolutionItems) = preProject
