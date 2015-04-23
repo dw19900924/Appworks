@@ -51,6 +51,11 @@
     <Compile Include="Application\AppInitEventArgs.cs" />
     <Compile Include="Application\AppRuntime.cs" />
     <Compile Include="Application\IApp.cs" />
+    <Compile Include="Password\HashPasswordUtils.cs" />
+    <Compile Include="Password\HashPasswordBase.cs" />
+    <Compile Include="Password\IHashPassword.cs" />
+    <Compile Include="Password\SHA256HashPassword.cs" />
+    <Compile Include="Password\SHA512HashPassword.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
