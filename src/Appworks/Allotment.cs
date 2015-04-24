@@ -94,7 +94,7 @@ namespace Appworks
                 {
                     if (string.IsNullOrEmpty(this.connectionStringSettings.ProviderName))
                     {
-                        throw new Exception("Can't find the 'providerName' attribute in the config of the connection string.");
+                        throw new ConfigurationErrorsException("Can't find the 'providerName' attribute in the config of the connection string.");
                     }
 
                     this.providerName = this.connectionStringSettings.ProviderName;
