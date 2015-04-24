@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{774576
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.Tests", "tests\Appworks.Tests\Appworks.Tests.csproj", "{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.Repositories.Dapper", "src\Appworks.Repositories.Dapper\Appworks.Repositories.Dapper.csproj", "{E6FA5C78-7659-4A56-8C8B-E0AE8D480CC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.Password", "src\Appworks.Password\Appworks.Password.csproj", "{B8337B0D-9B22-43DE-9D44-F32AE7ACD364}"
@@ -30,10 +28,6 @@ Global
 		{7559B6B1-F48F-4569-B167-13516C7E70E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7559B6B1-F48F-4569-B167-13516C7E70E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7559B6B1-F48F-4569-B167-13516C7E70E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6FA5C78-7659-4A56-8C8B-E0AE8D480CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6FA5C78-7659-4A56-8C8B-E0AE8D480CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6FA5C78-7659-4A56-8C8B-E0AE8D480CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,7 +45,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
 		{47E28AC1-44B7-4CC4-BDA6-EF2553008464} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
 	EndGlobalSection
 EndGlobal
