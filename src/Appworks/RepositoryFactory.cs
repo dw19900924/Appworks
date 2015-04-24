@@ -6,13 +6,14 @@
 //   The repository factory.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
 namespace Appworks
 {
     using System;
     using System.Configuration;
 
     /// <summary>
-    ///     The repository factory.
+    /// The repository factory.
     /// </summary>
     public class RepositoryFactory : IRepositoryFactory
     {
