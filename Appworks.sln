@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.Repositories.Dappe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.Password", "src\Appworks.Password\Appworks.Password.csproj", "{B8337B0D-9B22-43DE-9D44-F32AE7ACD364}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.UnitTests", "tests\Appworks.UnitTests\Appworks.UnitTests.csproj", "{47E28AC1-44B7-4CC4-BDA6-EF2553008464}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,11 +42,16 @@ Global
 		{B8337B0D-9B22-43DE-9D44-F32AE7ACD364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8337B0D-9B22-43DE-9D44-F32AE7ACD364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8337B0D-9B22-43DE-9D44-F32AE7ACD364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E28AC1-44B7-4CC4-BDA6-EF2553008464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E28AC1-44B7-4CC4-BDA6-EF2553008464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E28AC1-44B7-4CC4-BDA6-EF2553008464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E28AC1-44B7-4CC4-BDA6-EF2553008464}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D9A1F010-BD2A-4D0A-83F3-009C2676D2D7} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
+		{47E28AC1-44B7-4CC4-BDA6-EF2553008464} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
 	EndGlobalSection
 EndGlobal
