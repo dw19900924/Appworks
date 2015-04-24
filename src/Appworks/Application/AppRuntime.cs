@@ -19,18 +19,17 @@ namespace Appworks.Application
         /// <summary>
         /// The current app.
         /// </summary>
-        private readonly IApp currentApp;
+        private IApp currentApp;
 
         #endregion
 
         #region Constructors and Destructors
 
         /// <summary>
-        /// Prevents a default instance of the <see cref="AppRuntime"/> class from being created.
+        /// Prevents a default instance of the <see cref="AppRuntime" /> class from being created.
         /// </summary>
         private AppRuntime()
         {
-            this.currentApp = new App();
         }
 
         #endregion
@@ -61,6 +60,21 @@ namespace Appworks.Application
 
         #endregion
 
+        #region Public Methods and Operators
+
+        /// <summary>
+        /// The set current app.
+        /// </summary>
+        /// <param name="app">
+        /// The app.
+        /// </param>
+        public void SetCurrentApp(IApp app)
+        {
+            this.currentApp = app;
+        }
+
+        #endregion
+
         /// <summary>
         /// The nested.
         /// </summary>
@@ -69,7 +83,7 @@ namespace Appworks.Application
             #region Static Fields
 
             /// <summary>
-            ///     The inner.
+            /// The inner.
             /// </summary>
             internal static readonly AppRuntime Inner = new AppRuntime();
 

@@ -20,6 +20,8 @@ namespace Appworks.Application
     /// </summary>
     public class App : IApp
     {
+        private IContainer container;
+
         #region Constructors and Destructors
 
         /// <summary>
@@ -28,7 +30,6 @@ namespace Appworks.Application
         public App()
             : this(ContainerBuildOptions.None)
         {
-            this.ContainerBuilder = new ContainerBuilder();
         }
 
         /// <summary>
@@ -40,6 +41,7 @@ namespace Appworks.Application
         public App(ContainerBuildOptions buildOptions)
         {
             this.ContainerBuildOptions = buildOptions;
+            this.ContainerBuilder = new ContainerBuilder();
         }
 
         #endregion
@@ -58,7 +60,18 @@ namespace Appworks.Application
         /// <summary>
         /// Gets the container.
         /// </summary>
-        public IContainer Container { get; private set; }
+        public IContainer Container
+        {
+            get
+            {
+                if (null == this.container)
+                {
+                    this.container = this.ContainerBuilder.Build(this.ContainerBuildOptions);
+                }
+
+                return this.container;
+            }
+        }
 
         /// <summary>
         /// Gets the container build options.
@@ -126,8 +139,6 @@ namespace Appworks.Application
             {
                 handler(this, new AppInitEventArgs(this.ContainerBuilder));
             }
-
-            this.Container = this.ContainerBuilder.Build(this.ContainerBuildOptions);
         }
 
         #endregion
