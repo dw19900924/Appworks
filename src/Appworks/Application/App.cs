@@ -20,7 +20,14 @@ namespace Appworks.Application
     /// </summary>
     public class App : IApp
     {
+        #region Fields
+
+        /// <summary>
+        /// The container.
+        /// </summary>
         private IContainer container;
+
+        #endregion
 
         #region Constructors and Destructors
 
