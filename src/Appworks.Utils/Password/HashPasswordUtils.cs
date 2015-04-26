@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Appworks.Password
+namespace Appworks.Utils.Password
 {
     using System;
     using System.Linq;
