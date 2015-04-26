@@ -63,6 +63,7 @@
     <Compile Include="RepositoryRuntimeUnitTest.cs" />
     <Compile Include="AllotmentUnitTest.cs" />
     <Compile Include="UnitOfWorkUnitTest.cs" />
+    <Compile Include="ServiceLocatorUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Appworks.Repositories.Dapper\Appworks.Repositories.Dapper.csproj">
