@@ -25,6 +25,22 @@ namespace Appworks.UnitTests
         #region Public Methods and Operators
 
         /// <summary>
+        /// The init.
+        /// </summary>
+        /// <param name="context">
+        /// The context.
+        /// </param>
+        [ClassInitialize]
+        public static void Init(TestContext context)
+        {
+            var app = new App(ContainerBuildOptions.None);
+            AppRuntime.Instance.SetCurrentApp(app);
+
+            app.Initialize += AppInitialize;
+            app.Start();
+        }
+
+        /// <summary>
         /// The get repository test.
         /// </summary>
         [TestMethod]
@@ -42,19 +58,6 @@ namespace Appworks.UnitTests
             Assert.IsNotNull(objRepo.Context);
 
             Assert.AreEqual(strRepo, strRepo1);
-        }
-
-        /// <summary>
-        /// The init.
-        /// </summary>
-        [TestInitialize]
-        public void Init()
-        {
-            var app = new App(ContainerBuildOptions.None);
-            AppRuntime.Instance.SetCurrentApp(app);
-
-            app.Initialize += AppInitialize;
-            app.Start();
         }
 
         #endregion
