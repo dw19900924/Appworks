@@ -9,7 +9,7 @@
 
 namespace Appworks.UnitTests.Password
 {
-    using Appworks.Password;
+    using Appworks.Utils.Password;
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
