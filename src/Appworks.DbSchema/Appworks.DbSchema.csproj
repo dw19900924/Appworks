@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="DbColumn.cs" />
     <Compile Include="DbColumnCollection.cs" />
+    <Compile Include="DbTable.cs" />
+    <Compile Include="DbTableCollection.cs" />
     <Compile Include="UnitedColumnTypeObject.cs" />
     <Compile Include="DbObject.cs" />
     <Compile Include="GenericDictionary.cs" />
