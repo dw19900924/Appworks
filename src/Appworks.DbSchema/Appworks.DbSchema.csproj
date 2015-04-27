@@ -49,6 +49,7 @@
     <Compile Include="DbTableCollection.cs" />
     <Compile Include="DbView.cs" />
     <Compile Include="DbViewCollection.cs" />
+    <Compile Include="IDbSchemaProvider.cs" />
     <Compile Include="UnitedColumnTypeObject.cs" />
     <Compile Include="DbObject.cs" />
     <Compile Include="GenericDictionary.cs" />
