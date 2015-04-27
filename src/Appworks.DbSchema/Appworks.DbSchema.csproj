@@ -49,16 +49,29 @@
     <Compile Include="DbTableCollection.cs" />
     <Compile Include="DbView.cs" />
     <Compile Include="DbViewCollection.cs" />
+    <Compile Include="Firebird\IFirebirdSchemaProvider.cs" />
+    <Compile Include="Firebird\FirebirdSchemaProvider.cs" />
+    <Compile Include="Firebird\FirebirdSchemaProviderBase.cs" />
     <Compile Include="IDbSchemaProvider.cs" />
+    <Compile Include="MySQL\IMySQLSchemaProvider.cs" />
+    <Compile Include="MySQL\MySQLSchemaProvider.cs" />
+    <Compile Include="MySQL\MySQLSchemaProviderBase.cs" />
+    <Compile Include="Oledb\IOledbSchemaProvider.cs" />
+    <Compile Include="Oledb\OledbSchemaProvider.cs" />
+    <Compile Include="Oledb\OledbSchemaProviderBase.cs" />
     <Compile Include="SqlClient\ISqlSchemaProvider.cs" />
     <Compile Include="SqlClient\SqlSchemaProvider.cs" />
     <Compile Include="SqlClient\SqlSchemaProviderBase.cs" />
+    <Compile Include="SQLite\ISQLiteSchemaProvider.cs" />
+    <Compile Include="SQLite\SQLiteSchemaProvider.cs" />
+    <Compile Include="SQLite\SQLiteSchemaProviderBase.cs" />
     <Compile Include="UnitedColumnTypeObject.cs" />
     <Compile Include="DbObject.cs" />
     <Compile Include="GenericDictionary.cs" />
     <Compile Include="ObjectHashtable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
