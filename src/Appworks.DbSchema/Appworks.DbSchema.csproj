@@ -39,10 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseCollection.cs" />
     <Compile Include="DbColumn.cs" />
     <Compile Include="DbColumnCollection.cs" />
+    <Compile Include="DbKey.cs" />
+    <Compile Include="DbKeyCollection.cs" />
     <Compile Include="DbTable.cs" />
     <Compile Include="DbTableCollection.cs" />
+    <Compile Include="DbView.cs" />
+    <Compile Include="DbViewCollection.cs" />
     <Compile Include="UnitedColumnTypeObject.cs" />
     <Compile Include="DbObject.cs" />
     <Compile Include="GenericDictionary.cs" />
