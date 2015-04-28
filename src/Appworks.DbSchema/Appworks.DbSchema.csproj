@@ -30,6 +30,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SqlClient\Libraries\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SqlClient\Libraries\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SqlClient\Libraries\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SqlClient\Libraries\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,13 +81,32 @@
     <Compile Include="SQLite\ISQLiteSchemaProvider.cs" />
     <Compile Include="SQLite\SQLiteSchemaProvider.cs" />
     <Compile Include="SQLite\SQLiteSchemaProviderBase.cs" />
-    <Compile Include="UnitedColumnTypeObject.cs" />
     <Compile Include="DbObject.cs" />
     <Compile Include="GenericDictionary.cs" />
     <Compile Include="ObjectHashtable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Appworks.Utils\Appworks.Utils.csproj">
+      <Project>{1850db9f-b2ab-4b8d-9c74-5687d4717c36}</Project>
+      <Name>Appworks.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="SqlClient\Libraries\Microsoft.SqlServer.ConnectionInfo.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlClient\Libraries\Microsoft.SqlServer.Management.Sdk.Sfc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlClient\Libraries\Microsoft.SqlServer.Smo.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlClient\Libraries\Microsoft.SqlServer.SqlEnum.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

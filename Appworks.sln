@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.Utils", "src\Appwo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.DbSchema", "src\Appworks.DbSchema\Appworks.DbSchema.csproj", "{D11ACCE0-C7A6-4CB5-B09D-49341BB72E84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appworks.UnitTests.DbSchema", "tests\Appworks.UnitTests.DbSchema\Appworks.UnitTests.DbSchema.csproj", "{B4626168-2076-474C-827C-BBEC1530B66A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{D11ACCE0-C7A6-4CB5-B09D-49341BB72E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D11ACCE0-C7A6-4CB5-B09D-49341BB72E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D11ACCE0-C7A6-4CB5-B09D-49341BB72E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4626168-2076-474C-827C-BBEC1530B66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4626168-2076-474C-827C-BBEC1530B66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4626168-2076-474C-827C-BBEC1530B66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4626168-2076-474C-827C-BBEC1530B66A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +71,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{47E28AC1-44B7-4CC4-BDA6-EF2553008464} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
 		{AA82A1F2-5ABA-4E1D-B276-A53A8EF8E332} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
+		{B4626168-2076-474C-827C-BBEC1530B66A} = {F8EF63A9-71F6-434A-B8EB-81754C3E8FD7}
 	EndGlobalSection
 EndGlobal

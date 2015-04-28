@@ -9,8 +9,6 @@
 
 namespace Appworks.DbSchema
 {
-    using System;
-
     /// <summary>
     /// The db column.
     /// </summary>
@@ -32,11 +30,6 @@ namespace Appworks.DbSchema
         /// The description.
         /// </summary>
         private string description;
-
-        /// <summary>
-        /// The max length.
-        /// </summary>
-        private int maxLength;
 
         #endregion
 
@@ -79,11 +72,6 @@ namespace Appworks.DbSchema
                 this.columnType = value;
             }
         }
-
-        /// <summary>
-        /// Gets or sets the data type.
-        /// </summary>
-        public Type DataType { get; set; }
 
         /// <summary>
         /// Gets or sets the default value.
@@ -136,32 +124,6 @@ namespace Appworks.DbSchema
         /// Gets or sets a value indicating whether is primary key.
         /// </summary>
         public bool IsPrimaryKey { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether is uniquely.
-        /// </summary>
-        public bool IsUniquely { get; set; }
-
-        /// <summary>
-        /// Gets or sets the max length.
-        /// </summary>
-        public int MaxLength
-        {
-            get
-            {
-                return this.maxLength;
-            }
-
-            set
-            {
-                this.maxLength = value < 0 ? int.MaxValue : value;
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the united column type.
-        /// </summary>
-        public UnitedColumnType UnitedColumnType { get; set; }
 
         #endregion
     }
