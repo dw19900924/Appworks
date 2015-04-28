@@ -39,6 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\OledbHelper.cs" />
+    <Compile Include="DataAccess\SqlHelper.cs" />
+    <Compile Include="DataAccess\SqlHelperParameterCache.cs" />
+    <Compile Include="DataAccess\OledbHelperParameterCache.cs" />
     <Compile Include="Password\HashPasswordBase.cs" />
     <Compile Include="Password\HashPasswordUtils.cs" />
     <Compile Include="Password\IHashPassword.cs" />
