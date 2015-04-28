@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\OledbHelper.cs" />
+    <Compile Include="DataAccess\OracleHelper.cs" />
+    <Compile Include="DataAccess\OracleHelperParameterCache.cs" />
     <Compile Include="DataAccess\SqlHelper.cs" />
     <Compile Include="DataAccess\SqlHelperParameterCache.cs" />
     <Compile Include="DataAccess\OledbHelperParameterCache.cs" />
